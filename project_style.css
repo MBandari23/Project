@@ -61,3 +61,23 @@ cursor:pointer;
 .Footer h1{
     padding: 22px;
 }
+@media only screen and (max-width: 600px) {
+    .Button-Container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-buttons {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .right-buttons > div {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .Sections > div {
+        flex: 1 0 calc(100% - 20px);
+    }
+}
