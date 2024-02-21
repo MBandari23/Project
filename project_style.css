@@ -74,10 +74,4 @@ cursor:pointer;
 
     .right-buttons > div {
         margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .Sections > div {
-        flex: 1 0 calc(100% - 20px);
-    }
-}
+        margin-top: 10px}
