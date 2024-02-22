@@ -1,0 +1,54 @@
+.Button-Container{
+    background-color: rgb(210, 134, 149);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.button{
+    background-color: transparent;
+    border: none;
+    font: larger Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 50%;
+    color: rgb(56, 21, 21);    
+}
+.right-buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+.right-buttons button:hover{
+text-decoration: underline;
+cursor:pointer;
+}
+.about_1{
+    width: 100%;
+    height:80%;
+    background-color: rgb(174, 78, 78);
+    display: block;
+    padding: 80px 400px 100px 30px;
+    justify-content: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+h1#about_1{
+    font-size:70px;
+    animation: slideIn 1s ease-in-out;
+ }
+p#flash_in{
+    font-size:medium;
+    animation: flash-in 1s ease-out;
+} 
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes flash-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

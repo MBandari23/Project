@@ -9,7 +9,7 @@
     border: none;
     font: larger Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 50%;
-    
+    color: rgb(56, 21, 21);    
 }
 .right-buttons{
     display: flex;
