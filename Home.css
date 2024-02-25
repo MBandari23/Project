@@ -1,8 +1,8 @@
 
 .container_3{
-    padding: 20%;
+    padding: 5%;
     padding-top: 20px;
-    height: 50%;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.5); 
     margin-bottom: 40px;
     text-align:center;
@@ -11,9 +11,10 @@
     background-color: rgba(255, 255, 255, 0.5);
     opacity: 1;
     backdrop-filter: blur(100px);
+    padding: 10px;
 }
 .container_3 h1{
-    font-size: 180px;
+    font-size: 6vw;
     animation: flash-in 5s ease-out;
 }
 @keyframes flash-in {
@@ -22,14 +23,26 @@
 }
 .HomeSection{
     background-color: rgb(232, 245, 231);
-    height: 70%;
-    justify-content:center;
-    padding: 15%;
-    padding-left: 15%;
-    padding-top: 10%;
+    height: auto;
+    justify-content: center;
+    padding: 5%;
     margin-top: 5%;
 }
 #inputfile{
     
     background-color: rgb(249, 249, 249);
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .container_3 {
+        padding: 10px;
+    }
+    
+    .container_3 h1 {
+        font-size: 8vw;
+    }
+    
+    .HomeSection {
+        padding: 10%;
+    }
 }
