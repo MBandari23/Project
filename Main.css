@@ -1,0 +1,91 @@
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(https://images.unsplash.com/photo-1536147210925-5cb7a7a4f9fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80);
+}
+.Button-Container_1{
+    height: 1%;
+    margin-bottom: 5%;
+    padding: 10px 20px;   
+}
+.Button-Container_1 button{
+    color: white; 
+    padding: 20px 20px; 
+    
+}
+.Button-Container{
+    background-color: rgb(254, 254, 254);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    
+}
+.button{
+    background-color: transparent;
+    border: none;
+    font: larger Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 50%;
+    color: rgb(0, 0, 0);    
+}
+.right-buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+.right-buttons button:hover{
+text-decoration: none;
+cursor:pointer;
+}
+.container_1{
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 20px;
+    height: 60%;
+    width:80%;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: bold;
+    display: flex;
+    margin:auto;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(10px); 
+    border-radius: 20px; 
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.container_2{
+    background-color:rgb(232, 245, 231);
+    padding-top:5%;
+    height: 90%;
+    margin-top:5%;
+    border-radius: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items:center;
+    text-align:center;
+}
+.sections{
+    display:flex;
+    padding-top: 1%;
+    padding: 10%;
+    
+    text-align: center;
+    float: center;
+    justify-content: space-around;
+}
+.Footer{
+    background-color: rgb(84, 132, 99);
+    height: 50%;
+    width: 100%;
+    display:flex;
+    margin-top:5%;
+    margin-bottom: 2%;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:bolder;
+}
+.Footer img{
+    height: 90%;
+    padding: 30px;
+}
+.Footer h1{
+    padding: 22px;
+}

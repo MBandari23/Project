@@ -1,0 +1,79 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="About.css" >
+        <link rel="stylesheet" href="Main.css" >
+    </head>
+
+    <body>
+        <section>
+            <div class="Button-Container_2">
+                <div><a href="index.html"><button class="buttona" id="Home-button">BirdWat</button></a></div>
+                <div class="right-buttonsa">
+                    <div><a href=Home.html><button class="buttona" id="button">Home</button></a></div>
+                    <div><a href=about.html><button class="buttona" id="button">About</button></a></div>
+                    <div><a href="Birds.html"><button class="buttona" id="button">Birds</button></div></a>
+                </div>  
+            </div>
+        </section>
+        <div class="about_1">
+            <h1 id="slide_in">Welcome to BirdWat</h1>
+            <p id="flash_in">The best place for bird watchers!<br>
+            
+                We at BirdWat are committed to introducing people to the amazing world of birds and building a community of outdoor enthusiasts who value the diversity and beauty of birds. <br>
+                Our website provides chances to improve your bird viewing experience. There's something for everyone here, from perusing an extensive database of bird species to documenting your findings and exchanging sightings with other bird watchers. <br>
+                Our goal is to enable and encourage bird lovers to explore, educate themselves, and establish a connection with the surrounding natural environment. We hope that our interactive features, informative information, and user-friendly interface will make bird watching rewarding, pleasurable, and accessible for lovers of all ages and backgrounds. <br>
+                Come along on BirdWat as we take you on an exciting journey into the fascinating world of bird viewing. </p>
+        </div>
+        <div class="section hidden">
+            <h1 id="slide_in">Mission Statement</h1>
+            <p>Clearly state the mission and goals of your bird-watching web application. <br>
+                Describe what you aim to achieve with the application and how it benefits bird watchers.</p>
+
+        </div>
+        <div class="section hidden background1">
+            <h1>Team Information</h1>
+            <p>Introduce the team or individuals behind the development of the application.<br>
+             Provide brief profiles or bios of the team members, including their roles and expertise.</p>
+            <section class="sections container">
+                <div class="sec1">
+                    <h1>Manushna Bandari</h1>
+                    <p>I'm gonna decide what to write here later</p>
+                </div>
+                <div class="sec1">
+                    <h1>Lasya</h1>
+                    <p>I'm gonna decide what to write here later</p>
+                </div>
+                <div class="sec1">
+                    <h1>Prasad</h1>
+                    <p>I'm gonna decide what to write here later</p>
+                </div>
+            </section>
+        </div>
+        <div class="section hidden background2">
+            <h1>Features and Functionality</h1>
+            <p>Highlight the key features and functionality of your bird watching web application.<br>
+               Explain how users can benefit from using the application and what sets it apart from other birding platforms.</p>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            window.addEventListener("scroll", revealSection);
+            function revealSection() {
+            var sections = document.querySelectorAll(".section");
+            sections.forEach(function(section) {
+             var sectionTop = section.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+      
+            if (sectionTop < windowHeight * 0.75) { // Adjust this value as needed
+             section.classList.remove("hidden");
+            }
+            });
+            }
+            });
+        </script>
+    </body>
+    
+</html>

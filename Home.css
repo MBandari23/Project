@@ -1,0 +1,35 @@
+
+.container_3{
+    padding: 20%;
+    padding-top: 20px;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.5); 
+    margin-bottom: 40px;
+    text-align:center;
+}  
+.Button-Container{
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    backdrop-filter: blur(100px);
+}
+.container_3 h1{
+    font-size: 180px;
+    animation: flash-in 5s ease-out;
+}
+@keyframes flash-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.HomeSection{
+    background-color: rgb(232, 245, 231);
+    height: 70%;
+    justify-content:center;
+    padding: 15%;
+    padding-left: 15%;
+    padding-top: 10%;
+    margin-top: 5%;
+}
+#inputfile{
+    
+    background-color: rgb(249, 249, 249);
+}

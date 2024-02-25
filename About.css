@@ -1,0 +1,79 @@
+
+.about_1, .section{
+    width: 100%;
+    height:80%;
+    background-color: rgb(232, 245, 231);
+    display: block;
+    padding: 80px 400px 100px 30px;
+    justify-content: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Button-Container_2{
+    
+    display: block;
+    height: 1%;
+    margin-bottom: 5%;
+    justify-content: space-around;
+    padding: 10px 20px;
+}
+#Home-Button{
+    color: aliceblue;
+}
+.buttona{
+    background-color: transparent;
+    border: none;
+    font: larger Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+}
+.right-buttonsa{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+h1#slide_in{
+    font-size:70px;
+    animation: slideIn 1s ease-in-out;
+ }
+p#flash_in{
+    font-size:medium;
+    animation: flash-in 1s ease-out;
+} 
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes flash-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.section{
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 5; 
+    font-weight: 50px;
+    transition: opacity 1s ease;
+}
+.hidden{
+    opacity: 0;
+    transition: opacity 0.5s ease;    
+}
+.background1{
+    background-color: rgb(232, 245, 231);
+    height: auto;
+}
+.sec1{
+   flex:1;
+   margin: 0 50px 0 80px;
+   padding:5%;
+   flex-direction: column;
+   align-items: center;
+}
+.background2{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 40%;
+}
