@@ -1,26 +1,25 @@
-/* About and Section Styles */
+
 .about_1, .section {
     width: 100%;
     background-color: rgb(232, 245, 231);
     display: block;
-    padding: 30px; /* Adjusted padding */
+    padding: 30px; 
     justify-content: left;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* Button Container Styles */
 .Button-Container_2 {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
 }
 
-/* Home Button Styles */
+
 #Home-button {
     color: aliceblue;
 }
 
-/* Common Button Styles */
+
 .buttona {
     background-color: transparent;
     border: none;
@@ -28,25 +27,25 @@
     color: aliceblue;
 }
 
-/* Right Buttons Container Styles */
+
 .right-buttonsa {
     display: flex;
     justify-content: flex-end;
 }
 
-/* Slide In Animation for Heading */
+
 h1#slide_in {
-    font-size: 3rem; /* Adjusted font size */
+    font-size: 3rem; 
     animation: slideIn 1s ease-in-out;
 }
 
-/* Flash In Animation for Paragraph */
+
 p#flash_in {
-    font-size: 1.2rem; /* Adjusted font size */
+    font-size: 1.2rem; 
     animation: flash-in 1s ease-out;
 } 
 
-/* Keyframes for Slide In Animation */
+
 @keyframes slideIn {
     0% {
         transform: translateY(-100%);
@@ -58,16 +57,15 @@ p#flash_in {
     }
 }
 
-/* Keyframes for Flash In Animation */
+
 @keyframes flash-in {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
 
-/* Section Styles */
 .section {
     background-color: rgba(255, 255, 255, 0.5);
-    font-weight: normal; /* Adjusted font weight */
+    font-weight: normal;
     transition: opacity 1s;
 }
 
@@ -78,13 +76,13 @@ p#flash_in {
 .background1{
     background-color: rgb(232, 245, 231);
     height: auto;
+    
 }
-.sec1{
-   flex:1;
-   margin: 0 50px 0 80px;
-   padding:5%;
-   flex-direction: column;
-   align-items: center;
+.sec1 {
+    
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 100%; 
 }
 .background2{
     background-color: rgba(255, 255, 255, 0.5);
