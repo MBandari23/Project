@@ -1,43 +1,52 @@
-
-.about_1, .section{
+/* About and Section Styles */
+.about_1, .section {
     width: 100%;
-    height:80%;
     background-color: rgb(232, 245, 231);
     display: block;
-    padding: 80px 400px 100px 30px;
+    padding: 30px; /* Adjusted padding */
     justify-content: left;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.Button-Container_2{
-    
-    display: block;
-    height: 1%;
-    margin-bottom: 5%;
-    justify-content: space-around;
+
+/* Button Container Styles */
+.Button-Container_2 {
+    display: flex;
+    justify-content: space-between;
     padding: 10px 20px;
 }
-#Home-Button{
+
+/* Home Button Styles */
+#Home-button {
     color: aliceblue;
 }
-.buttona{
+
+/* Common Button Styles */
+.buttona {
     background-color: transparent;
     border: none;
     font: larger Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: aliceblue;
 }
-.right-buttonsa{
+
+/* Right Buttons Container Styles */
+.right-buttonsa {
     display: flex;
     justify-content: flex-end;
-   
 }
-h1#slide_in{
-    font-size:70px;
+
+/* Slide In Animation for Heading */
+h1#slide_in {
+    font-size: 3rem; /* Adjusted font size */
     animation: slideIn 1s ease-in-out;
- }
-p#flash_in{
-    font-size:medium;
+}
+
+/* Flash In Animation for Paragraph */
+p#flash_in {
+    font-size: 1.2rem; /* Adjusted font size */
     animation: flash-in 1s ease-out;
 } 
+
+/* Keyframes for Slide In Animation */
 @keyframes slideIn {
     0% {
         transform: translateY(-100%);
@@ -48,32 +57,16 @@ p#flash_in{
         opacity: 1;
     }
 }
+
+/* Keyframes for Flash In Animation */
 @keyframes flash-in {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
-.section{
+
+/* Section Styles */
+.section {
     background-color: rgba(255, 255, 255, 0.5);
-    opacity: 5; 
-    font-weight: 50px;
-    transition: opacity 1s ease;
-}
-.hidden{
-    opacity: 0;
-    transition: opacity 0.5s ease;    
-}
-.background1{
-    background-color: rgb(232, 245, 231);
-    height: auto;
-}
-.sec1{
-   flex:1;
-   margin: 0 50px 0 80px;
-   padding:5%;
-   flex-direction: column;
-   align-items: center;
-}
-.background2{
-    background-color: rgba(255, 255, 255, 0.5);
-    height: 40%;
+    font-weight: normal; /* Adjusted font weight */
+    transition: opacity 1s
 }
