@@ -68,5 +68,25 @@ p#flash_in {
 .section {
     background-color: rgba(255, 255, 255, 0.5);
     font-weight: normal; /* Adjusted font weight */
-    transition: opacity 1s
+    transition: opacity 1s;
+}
+
+.hidden{
+    opacity: 0;
+    transition: opacity 0.5s ease;    
+}
+.background1{
+    background-color: rgb(232, 245, 231);
+    height: auto;
+}
+.sec1{
+   flex:1;
+   margin: 0 50px 0 80px;
+   padding:5%;
+   flex-direction: column;
+   align-items: center;
+}
+.background2{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 40%;
 }
