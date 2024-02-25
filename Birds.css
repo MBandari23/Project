@@ -1,22 +1,27 @@
 .card{
     width: 90%;
-    height: 20%;
-    padding: 5px 5px;
-    margin:25%;
+    padding: 10px;
+    margin:5% auto;
     
-    display: flexbox;
-    border-radius: 10px; 
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .card-content{
-    background-color:rgba(161, 209, 196, 0.5);
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   align-items: flex-start;
-  padding: 3%;
+   padding: 10px;
 }
 .cards{
     display: flex;
     flex-wrap: wrap; 
-    
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        margin: 5% auto;
+    }
 }
 
 

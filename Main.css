@@ -2,6 +2,9 @@
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-image: url(https://images.unsplash.com/photo-1536147210925-5cb7a7a4f9fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .Button-Container_1{
     height: 1%;
@@ -38,8 +41,8 @@ cursor:pointer;
 }
 .container_1{
     background-color: rgba(255, 255, 255, 0.5); 
-    padding: 20px;
-    height: 60%;
+    padding: 90px;
+    height: auto;
     width:80%;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    font-weight: bold;
@@ -55,9 +58,9 @@ cursor:pointer;
 .container_2{
     background-color:rgb(232, 245, 231);
     padding-top:5%;
-    height: 90%;
+    height: auto;
     margin-top:5%;
-    border-radius: 40px;
+    border-radius: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     align-items:center;
     text-align:center;
@@ -66,10 +69,13 @@ cursor:pointer;
     display:flex;
     padding-top: 1%;
     padding: 10%;
-    
     text-align: center;
-    float: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sections > div {
+    flex-basis: 20%; 
+    margin-bottom: 20px;
 }
 .Footer{
     background-color: rgb(84, 132, 99);
@@ -78,14 +84,36 @@ cursor:pointer;
     display:flex;
     margin-top:5%;
     margin-bottom: 2%;
-    
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight:bolder;
 }
 .Footer img{
-    height: 90%;
-    padding: 30px;
+    
+    padding: 80px;
 }
 .Footer h1{
-    padding: 22px;
+    align-items:flex-end;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .Button-Container_1 {
+        padding: 5px;
+    }
+
+    .Button-Container_1 button {
+        padding: 10px 15px;
+    }
+
+    .container_1 {
+        width: 90%;
+    }
+
+    .sections > div {
+        flex-basis: 100%;
+    }
+
+    .Footer img {
+        width: 30%;
+    }
 }
