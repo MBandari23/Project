@@ -14,7 +14,9 @@
     padding: 10px;
 }
 .container_3 h1{
-    font-size: 6vw;
+    padding-top: 3%;
+    justify-content: center;
+    font-size: 8vw;
     animation: flash-in 5s ease-out;
 }
 @keyframes flash-in {
@@ -26,12 +28,15 @@
     height: auto;
     justify-content: center;
     padding: 5%;
-    margin-top: 5%;
+    margin-top: 3.5%;
 }
 #inputfile{
     
     background-color: rgb(249, 249, 249);
     width: 100%;
+}
+.filecontainer button{
+    background-color: rgb(198, 216, 201);
 }
 @media screen and (max-width: 768px) {
     .container_3 {
