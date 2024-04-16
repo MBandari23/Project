@@ -26,7 +26,10 @@ def allowed_file(filename):
     return ('.' in filename) and (filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS)
 
 #initializing boto3 client
-s3_client = boto3.client('s3')
+s3_client = boto3.client('s3', aws_access_key_id='AKIATIIBMARCYEIUQVUG',
+    aws_secret_access_key='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',
+    region_name='us-east-2'
+)
 
 uploads= 'uploads' #initializing the uploads folder
 ALLOWED_EXTENSIONS = {'png','jpg','jpeg'} #accepts images with only specified extensions 
@@ -63,7 +66,7 @@ def predict():
             labels = np.unique(np.array(imagedata['species_group'].values))
             prediction = model_predict(filepath)
             top_3 = prediction.argsort()[-1:-4:-1]
-            return render_template('predict.html', prediction=prediction, labels=labels, top_3=top_3, filepath=filepath)
+            return render_template('predict.html', prediction=prediction, labels=labels, top_3=top_3)
         else:
             flash('An error occurred, try again.')
             return redirect(request.url)  
