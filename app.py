@@ -26,9 +26,7 @@ def allowed_file(filename):
     return ('.' in filename) and (filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS)
 
 #initializing boto3 client
-s3_client = boto3.client('s3', aws_access_key_id='AKIATIIBMARCYEIUQVUG',
-    aws_secret_access_key='Secret_Key',
-    region_name='us-east-2')
+s3_client = boto3.client('s3')
 
 uploads= 'uploads' #initializing the uploads folder
 ALLOWED_EXTENSIONS = {'png','jpg','jpeg'} #accepts images with only specified extensions 
