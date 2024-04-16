@@ -27,7 +27,7 @@ def allowed_file(filename):
 
 #initializing boto3 client
 s3_client = boto3.client('s3', aws_access_key_id='AKIATIIBMARCYEIUQVUG',
-    aws_secret_access_key='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',
+    aws_secret_access_key='Secret_Key',
     region_name='us-east-2')
 
 uploads= 'uploads' #initializing the uploads folder
